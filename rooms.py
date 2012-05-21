@@ -1,3 +1,36 @@
+#logo
+logo= """
+                                                                                           
+                                       :;;:                                                         
+                                      ,;,;;.                                                        
+                                      ;:;;;;                                                        
+                                      ::;;;:                                                        
+            ... `                     .::::            `,'#+      .:+#;                             
+         ,+####++                      :::`           '+####     +####;                             
+        ;#+#, .:'                      ::`              +##+      .+#+;                             
+        +#+:                           .`               ++#+       ###;                             
+       `++#;          `                                 ++#+    `  #++;                 `           
+       `++++,    `,;+++;++,  .:+++,++;:+++`.:+++`;++;`  ++++    ++;+++;  `+++#; `,'++:+++           
+        ++++++`  '++++++++++:+++++++++++++;+++++++++++` ++++  `++, +++; :++; :++'++++++++           
+        `++++++'`  ++++` ++++ +++++;::;+++` ++++'  ;+++`++++ `++`  +++;.+++`  ++:`+++++:'           
+         `+++++++` ++++  `+++`++++`   ,+++` '+++   ,+++`++++.++`   +++;++++   '++`++++              
+          `:++++++`++++  `+++:'+++    ,+++` '+++   ,+++.++++++++   +++;++++'++++;`+++;              
+            `'++++,++++   +++''+++    ,+++` '+++   .+++.++++++++.  +++;++++',`   `+++:              
+              ;+++'++++   +++''+++    ,+++` '+++   ,+++.++++.++++  +++;++++      `+++:              
+              `+++;++++  `+++.'+++    ,+++` '+++   ,+++.++++ '+++;`+++:++++      `+++:              
+              `+++.++++  :+++`'+++    ,+++` '+++   ,+++.++++ `++++`+++:;+++;   `;`+++:              
+        '+;:,:+++' ++++:,+++, '+++    ,+++` '+++   ,+++.'+++  :+++++++; '++++:'+'`+++:              
+        '+++++++:` ++++++++:  '+++    ,+++` '+++   .+++.'+++   +++++++: `'++++++` +++:              
+          `...`    ++++`..      ``       `  `  `    ```  ```    ```````   `.,.`   ````              
+                   +++'                                 :;; ;;;;;`;`  ; ;;;:` :: `;;,               
+                   +++'                                :;`: ``;.``;   ; ;,.;; :: ;,`;;              
+                   +++'                                :;,`   ;`  ;   ; ;,  ;`::,;  `;              
+                   ''''                                 .:;.  ;`  ;` `; ;,  ;`:::;  `;`             
+                                                       ```;,  ;`  ;,`,; ;, ,; ::`;.`:;              
+                                                       ,;;;   ;`  `;;;` ;;;;. :: .;;;`    
+
+                                               """
+
 #use this format when adding a new room
 #genericroom = """This is a generic room"""
 
@@ -67,7 +100,7 @@ patiodesc="""Time to relax. East or South?"""
 dustyhall="""AHHHH CHOOOO!!!!! So much dust. All directions availible."""
 
 #these are all rooms on the top floor of the house
-masterbed ="""master_bed S"""
+masterbedroom ="""master_bed S"""
 
 gallerydesc = """gallery N,S"""
 
@@ -79,7 +112,7 @@ towerdesc="""tower n,s"""
 
 bloodyroom="bloody_room n,e,w"""
 
-vault="""vault S"""
+vaultdesc="""vault S"""
 
 researchlab="""research_lab n,s"""
 
@@ -121,7 +154,7 @@ operatingroom="""Surgery please. N, W"""
 
 wineceller="""Casks of wine everywhere. w,e"""
 
-serventsquarters="""where the butler sleeps. all directions"""
+servantsquarters="""where the butler sleeps. all directions"""
 
 mysticelevator="""where it goes no one knows. just N"""
 
@@ -131,4 +164,4 @@ statuaryhall="""A hall full of statues. N and S only"""
 
 undergroundlake="""What is all this water doing here? E + S"""
 
-stairstofoyer="""These stairs seem to go up...to the foyer."""
+stairstofoyer="""These stairs seem to go up...Take them?"""

@@ -249,6 +249,156 @@ def landing():
     else:
         dead("You stumble around the room until you starve.")
 
+def research_lab():
+    print researchlab
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        vault()
+    elif next in ['s','south']:
+        landing()   
+    else:
+        dead("You stumble around the room until you starve.")
+
+def vault():
+    print vaultdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['s','south']:
+        research_lab()   
+    else:
+        dead("You stumble around the room until you starve.")
+
+def junk_room():
+    print junkroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        bedroom()
+    elif next in ['e','east']:
+        collapsed_room()
+    elif next in ['w','west']:
+        landing()    
+    else:
+        dead("You stumble around the room until you starve.")
+
+def collapsed_room():
+    print collapsedroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        balcony()
+    elif next in ['w','west']:
+        junk_room()  
+    else:
+        dead("You stumble around the room until you starve.")
+
+def balcony():
+    print balconydesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['s','south']:
+        collapsed_room()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def bedroom():
+    print bedroomdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        attic()
+    elif next in ['s','south']:
+        junk_room()  
+    else:
+        dead("You stumble around the room until you starve.")
+
+def attic():
+    print atticdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['s','south']:
+        bedroom()  
+    else:
+        dead("You stumble around the room until you starve.")
+
+def bloody_room():
+    print bloodyroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        tower()
+    elif next in ['e','east']:
+        landing()
+    elif next in ['w','west']:
+        library()    
+    else:
+        dead("You stumble around the room until you starve.")
+
+def library():
+    print librarydesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        gallery()
+    elif next in ['e','east']:
+        bloody_room() 
+    else:
+        dead("You stumble around the room until you starve.")
+
+def gallery():
+    print gallerydesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        master_bedroom()
+    elif next in ['s','south']:
+        library()   
+    else:
+        dead("You stumble around the room until you starve.")
+
+def master_bedroom():
+    print masterbedroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['s','south']:
+        library()   
+    else:
+        dead("You stumble around the room until you starve.")
+
+def tower():
+    print towerdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        chapel()
+    elif next in ['s','south']:
+        bloody_room()  
+    else:
+        dead("You stumble around the room until you starve.")
+
+def chapel():
+    print chapeldesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['s','south']:
+        tower()  
+    else:
+        dead("You stumble around the room until you starve.")
+
 # Basement Rooms
 
 def basement_landing():
@@ -266,6 +416,206 @@ def basement_landing():
         gym()    
     else:
         dead("You stumble around the room until you starve.")
+
+def gym():
+    print gymdesc
+
+    next = raw_input("> ").lower()
+
+
+    if next in ['e','east']:
+        basement_landing()
+    elif next in ['s','south']:
+        furnace_room() 
+    else:
+        dead("You stumble around the room until you starve.")
+        
+def furnace_room():
+    print furnaceroom
+
+    next = raw_input("> ").lower()
+
+
+    if next in ['e','east']:
+        operating_room()
+    elif next in ['n','north']:
+        gym() 
+    elif next in ['w','west']:
+        wine_celler()
+    else:
+        dead("You stumble around the room until you starve.")  
+
+def wine_celler():
+    print wineceller
+
+    next = raw_input("> ").lower()
+
+
+    if next in ['e','east']:
+        furnace_room()
+    elif next in ['w','west']:
+        servants_quarters() 
+    else:
+        dead("You stumble around the room until you starve.") 
+
+def servants_quarters():
+    print servantsquarters
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        statuary_hall()
+    elif next in ['e','east']:
+        wine_celler()
+    elif next in ['s','south']:
+        mystic_elevator()
+    elif next in ['w','west']:
+        pentagram_chamber()    
+    else:
+        dead("You stumble around the room until you starve.")
+
+def mystic_elevator(): # will teleport player to a random room eventually
+    print mysticelevator
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        servants_quarters()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def pentagram_chamber():
+    print pentagramchamber
+
+    next = raw_input("> ").lower()
+
+    if next in ['e','east']:
+        servants_quarters()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def statuary_hall():
+    print statuaryhall
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        underground_lake()
+    elif next in ['s','south']:
+        servants_quarters()   
+    else:
+        dead("You stumble around the room until you starve.") 
+
+def underground_lake():
+    print undergroundlake
+
+    next = raw_input("> ").lower()
+
+    if next in ['e','east']:
+        stairs_to_foyer()
+    elif next in ['s','south']:
+        statuary_hall()   
+    else:
+        dead("You stumble around the room until you starve.") 
+
+def stairs_to_foyer():
+    print stairstofoyer
+
+    next = raw_input("> ").lower()
+
+    if next in ['y','yes']:
+        foyer()
+    else: 
+        underground_lake()
+
+def chasm():
+    print chasmdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        organ_room()
+    elif next in ['s','south']:
+        basement_landing()  
+    else:
+        dead("You stumble around the room until you starve.")
+
+def organ_room():
+    print organroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['w','west']:
+        store_room()
+    elif next in ['s','south']:
+        chasm()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def store_room():
+    print storeroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['e','east']:
+        organ_room()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def operating_room():
+    print operatingroom
+
+    next = raw_input("> ").lower()
+
+    if next in ['n','north']:
+        basement_landing()
+    elif next in ['w','west']:
+        furnace_room()    
+    else:
+        dead("You stumble around the room until you starve.")
+
+def larder():
+    print larderdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['w','west']:
+        basement_landing()
+    elif next in ['e','east']:
+        catacombs()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def catacombs():
+    print catacombsdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['w','west']:
+        larder()
+    elif next in ['e','east']:
+        crypt()
+    else:
+        dead("You stumble around the room until you starve.")
+
+def crypt():
+    print cryptdesc
+
+    next = raw_input("> ").lower()
+
+    if next in ['w','west']:
+        catacombs()
+    else:
+        dead("You stumble around the room until you starve.")
+
+#death
+def dead(why):
+    print why, "Good Job!!"
+    exit(0)
+
+#actual gameplay starts here
+#print logo
+
 print intro
 raw_input ("> ")
 outside()
