@@ -1,6 +1,5 @@
 #logo
-logo= """
-                                                                                           
+logo= """                                                                                       
                                        :;;:                                                         
                                       ,;,;;.                                                        
                                       ;:;;;;                                                        
@@ -39,9 +38,8 @@ intro = """Welcome to the Haunted House.
 This house was inspired by:
 Betrayal on the House on the Hill
 For ease of playing you can abbreviate
-North, South, East and West as N, S, E and W
-Other words will need to be typed in fully
-in lower case.
+North, South, East and West as N, S, E and W. 
+And you don't have to worry about upper/lower case.
 Enjoy!"""
 
 #the rest are all rooms on the main floor of the house
@@ -75,13 +73,30 @@ strange lack of floor as you tumble down. Landing in a heep
 you feel for injuries and stand up.
 """
 
-foyerdesc="""Foyer exits to North and West"""
+foyerdesc="""A contiuation of the entrance hall the foyer seems just
+ a little bit more musty. There are suits of armor lining the walls 
+ and a large staircase to the north. On the east and west walls are 
+ closed doors. There is a large painting of a man riding a horse on 
+ one wall. """
 
-grandstairs="""Stairs to second floor. Take them?"""
+grandstairs="""This is a serious set of stairs that rise up into the 
+gloom. The wooden steps are covered in a plus blood red carpet and the 
+banisters seem to be carvings of human beings in various states of 
+decay. The bottom steps seems to be in good health and they get more 
+decomposed as the steps go up. Take the stairs?"""
 
-graveyard="""So many graves, can only go east from here"""
+graveyard="""The family graveyard. Most of the tombstones appear to 
+be in good condition though the oldest ones seem to be a liitle 
+chipped. upon closer inspection you notice that one of the graves looks 
+recently filled. You can't make out the name on the coffin but the dates 
+on the tombstone are 1786 to 1920, which seems impossible."""
 
-charredroom="""Looks like a fire went through here. Doors every direction"""
+charredroom="""This room looks like it was recently burned. None of the 
+other rooms you have been in seeme to have any fire damage but everything 
+in this room shows some sign of being in a fire. There is no fire place 
+in this room so the fire had to have been started here. What could have 
+caused such a blaze and contained it so fully. There is a door on every 
+wall."""
 
 diningroom="""Where the eating happens. Back north or keep going east"""
 

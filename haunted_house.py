@@ -1,5 +1,7 @@
+import random
 from sys import exit
 from rooms import *
+from badthings import *
 
 def generic_room():
     print genericroom
@@ -17,11 +19,11 @@ def generic_room():
     else:
         dead("You stumble around the room until you starve.")
 
-
 #First Floor Rooms
 
 def entrance_hall():
     print entrancehall
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -34,11 +36,11 @@ def entrance_hall():
     elif next in ['w','west']:
         creeky_hall()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(entrance_hall_death)
 
 def foyer():
     print foyerdesc
-
+    creature()
     next = raw_input("> ").lower()
 
     if next in ['n','north']:
@@ -50,7 +52,7 @@ def foyer():
     elif next in ['w','west']:
         grave_yard()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(foyer_death)
 
 def grand_stairs():
     print grandstairs
@@ -64,7 +66,7 @@ def grand_stairs():
 
 def dusty_hall():
     print dustyhall
-
+    creature()
     next = raw_input("> ").lower()
 
     if next in ['n','north']:
@@ -76,11 +78,11 @@ def dusty_hall():
     elif next in ['w','west']:
         foyer()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(dusty_hall_death)
 
 def abandoned_room():
     print abandonedroom
-
+    creature()
     next = raw_input("> ").lower()
 
     if next in ['n','north']:
@@ -90,11 +92,11 @@ def abandoned_room():
     elif next in ['w','west']:
         dusty_hall()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(abandoned_room_death)
 
 def kitchen():
     print kitchendesc
-
+    creature()
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
@@ -102,10 +104,11 @@ def kitchen():
     elif next in ['w','west']:
         patio()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(kitchen_death)
 
 def patio():
     print patiodesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -114,20 +117,22 @@ def patio():
     elif next in ['s','south']:
         dusty_hall()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(patio_death)
 
 def grave_yard():
     print graveyard
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['e','east']:
         foyer() 
     else:
-        dead("You stumble around the room until you starve.")
+        dead(grave_yard_death)
 
 def charred_room():
     print charredroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -140,10 +145,11 @@ def charred_room():
     elif next in ['e','east']:
         garden()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(charred_room_death)
 
 def garden():
     print gardendesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -154,10 +160,11 @@ def garden():
     elif next in ['e','east']:
         charred_room()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(garden_death)
 
 def game_room():
     print gameroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -168,20 +175,22 @@ def game_room():
     elif next in ['w','west']:
         dining_room()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(game_room_death)
 
 def conservatory():
     print conservatorydesc
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['w','west']:
         game_room() 
     else:
-        dead("You stumble around the room until you starve.")
+        dead(conservatory_death)
 
 def dining_room():
     print diningroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -190,10 +199,11 @@ def dining_room():
     elif next in ['e','east']:
         game_room()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(dining_room_death)
 
 def creeky_hall():
     print creekyhall
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -202,10 +212,11 @@ def creeky_hall():
     elif next in ['e','east']:
         entrance_hall() 
     else:
-        dead("You stumble around the room until you starve.")
+        dead(creeky_hall_death)
 
 def ball_room():
     print ballroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -214,7 +225,7 @@ def ball_room():
     elif next in ['e','east']:
         creeky_hall() 
     else:
-        dead("You stumble around the room until you starve.")
+        dead(ball_room_death)
 
 def coal_chute():
     print coalchute
@@ -229,12 +240,13 @@ def outside():
     if next in ['y','yes']:
         entrance_hall()
     else: 
-        dead("The werewolf catches you and eats you.")
+        dead(outside_death)
 
 # Second Floor Rooms
 
 def landing():
     print landingdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -247,10 +259,11 @@ def landing():
     elif next in ['w','west']:
         bloody_room()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(landing_death)
 
 def research_lab():
     print researchlab
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -259,20 +272,22 @@ def research_lab():
     elif next in ['s','south']:
         landing()   
     else:
-        dead("You stumble around the room until you starve.")
+        dead(research_lab_death)
 
 def vault():
     print vaultdesc
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
         research_lab()   
     else:
-        dead("You stumble around the room until you starve.")
+        dead(vault_death)
 
 def junk_room():
     print junkroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -283,10 +298,11 @@ def junk_room():
     elif next in ['w','west']:
         landing()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(junk_room_death)
 
 def collapsed_room():
     print collapsedroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -295,20 +311,22 @@ def collapsed_room():
     elif next in ['w','west']:
         junk_room()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(collapsed_room_death)
 
 def balcony():
     print balconydesc
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
         collapsed_room()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(balcony_death)
 
 def bedroom():
     print bedroomdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -317,20 +335,22 @@ def bedroom():
     elif next in ['s','south']:
         junk_room()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(bedroom_death)
 
 def attic():
     print atticdesc
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
         bedroom()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(attic_death)
 
 def bloody_room():
     print bloodyroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -341,10 +361,11 @@ def bloody_room():
     elif next in ['w','west']:
         library()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(bloody_room)
 
 def library():
     print librarydesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -353,10 +374,11 @@ def library():
     elif next in ['e','east']:
         bloody_room() 
     else:
-        dead("You stumble around the room until you starve.")
+        dead(library_death)
 
 def gallery():
     print gallerydesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -365,20 +387,22 @@ def gallery():
     elif next in ['s','south']:
         library()   
     else:
-        dead("You stumble around the room until you starve.")
+        dead(gallery_death)
 
 def master_bedroom():
     print masterbedroom
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
         library()   
     else:
-        dead("You stumble around the room until you starve.")
+        dead(master_bedroom_death)
 
 def tower():
     print towerdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -387,17 +411,18 @@ def tower():
     elif next in ['s','south']:
         bloody_room()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(tower_death)
 
 def chapel():
     print chapeldesc
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
         tower()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(chapel_death)
 
 # Basement Rooms
 
@@ -415,10 +440,11 @@ def basement_landing():
     elif next in ['w','west']:
         gym()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(basement_landing_death)
 
 def gym():
     print gymdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -428,10 +454,11 @@ def gym():
     elif next in ['s','south']:
         furnace_room() 
     else:
-        dead("You stumble around the room until you starve.")
+        dead(gym_death)
         
 def furnace_room():
     print furnaceroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -443,10 +470,11 @@ def furnace_room():
     elif next in ['w','west']:
         wine_celler()
     else:
-        dead("You stumble around the room until you starve.")  
+        dead(furnace_room_death)  
 
 def wine_celler():
     print wineceller
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -456,10 +484,11 @@ def wine_celler():
     elif next in ['w','west']:
         servants_quarters() 
     else:
-        dead("You stumble around the room until you starve.") 
+        dead(wine_celler_death) 
 
 def servants_quarters():
     print servantsquarters
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -472,7 +501,7 @@ def servants_quarters():
     elif next in ['w','west']:
         pentagram_chamber()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(servants_quarters_death)
 
 def mystic_elevator(): # will teleport player to a random room eventually
     print mysticelevator
@@ -486,16 +515,18 @@ def mystic_elevator(): # will teleport player to a random room eventually
 
 def pentagram_chamber():
     print pentagramchamber
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['e','east']:
         servants_quarters()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(pentagram_chamber_death)
 
 def statuary_hall():
     print statuaryhall
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -504,10 +535,11 @@ def statuary_hall():
     elif next in ['s','south']:
         servants_quarters()   
     else:
-        dead("You stumble around the room until you starve.") 
+        dead(statuary_hall_death) 
 
 def underground_lake():
     print undergroundlake
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -516,7 +548,7 @@ def underground_lake():
     elif next in ['s','south']:
         statuary_hall()   
     else:
-        dead("You stumble around the room until you starve.") 
+        dead(underground_lake_death) 
 
 def stairs_to_foyer():
     print stairstofoyer
@@ -530,6 +562,7 @@ def stairs_to_foyer():
 
 def chasm():
     print chasmdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -538,10 +571,11 @@ def chasm():
     elif next in ['s','south']:
         basement_landing()  
     else:
-        dead("You stumble around the room until you starve.")
+        dead(chasm_death)
 
 def organ_room():
     print organroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -550,20 +584,22 @@ def organ_room():
     elif next in ['s','south']:
         chasm()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(organ_room_death)
 
 def store_room():
     print storeroom
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['e','east']:
         organ_room()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(store_room_death)
 
 def operating_room():
     print operatingroom
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -572,10 +608,11 @@ def operating_room():
     elif next in ['w','west']:
         furnace_room()    
     else:
-        dead("You stumble around the room until you starve.")
+        dead(operating_room_death)
 
 def larder():
     print larderdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -584,10 +621,11 @@ def larder():
     elif next in ['e','east']:
         catacombs()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(larder_death)
 
 def catacombs():
     print catacombsdesc
+    creature()
 
     next = raw_input("> ").lower()
 
@@ -596,17 +634,24 @@ def catacombs():
     elif next in ['e','east']:
         crypt()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(catacombs_death)
 
 def crypt():
     print cryptdesc
+    creature()
 
     next = raw_input("> ").lower()
 
     if next in ['w','west']:
         catacombs()
     else:
-        dead("You stumble around the room until you starve.")
+        dead(crypt_death)
+
+# Creatures
+
+def creature():
+    monster = [zombies,no_monster, zombie,no_monster, vampire,no_monster, count_vampire,no_monster, were_wolf,no_monster, slimes, no_monster, cultist]
+    print random.choice(monster)
 
 #death
 def dead(why):
@@ -614,8 +659,9 @@ def dead(why):
     exit(0)
 
 #actual gameplay starts here
-#print logo
+print logo
 
 print intro
+
 raw_input ("> ")
 outside()
