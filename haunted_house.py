@@ -2,6 +2,8 @@ import random
 from sys import exit
 from rooms import *
 from badthings import *
+from goodthings import *
+import monsters
 
 def generic_room():
     print genericroom
@@ -19,11 +21,38 @@ def generic_room():
     else:
         dead("You stumble around the room until you starve.")
 
+# Creatures
+
+def monster(type):
+    type = random.choice([zombies,no_monster, zombie,no_monster, vampire,no_monster, count_vampire,no_monster, were_wolf,no_monster, slimes, no_monster, cultist])
+    #print random.choice(monster)
+    #random.choice(type)
+    if type == zombies:
+        monsters.zombies()
+    elif type == zombie:
+        monsters.zombie()
+    elif type == vampire:
+        monsters.vampire()
+    elif type == count_vampire:
+        monsters.count_vampire()
+    elif type == were_wolf:
+        monsters.were_wolf()
+    elif type == slimes:
+        monsters.slimes()
+    elif type == cultist:
+        monsters.cultist()
+    else:
+        monsters.no_monster()
+
+
 #First Floor Rooms
 
 def entrance_hall():
     print entrancehall
-    creature()
+    monster(type)
+
+    
+    
 
     next = raw_input("> ").lower()
 
@@ -40,7 +69,7 @@ def entrance_hall():
 
 def foyer():
     print foyerdesc
-    creature()
+    monster(type)
     next = raw_input("> ").lower()
 
     if next in ['n','north']:
@@ -66,7 +95,7 @@ def grand_stairs():
 
 def dusty_hall():
     print dustyhall
-    creature()
+    monster(type)
     next = raw_input("> ").lower()
 
     if next in ['n','north']:
@@ -82,7 +111,7 @@ def dusty_hall():
 
 def abandoned_room():
     print abandonedroom
-    creature()
+    monster(type)
     next = raw_input("> ").lower()
 
     if next in ['n','north']:
@@ -96,7 +125,7 @@ def abandoned_room():
 
 def kitchen():
     print kitchendesc
-    creature()
+    monster(type)
     next = raw_input("> ").lower()
 
     if next in ['s','south']:
@@ -108,7 +137,7 @@ def kitchen():
 
 def patio():
     print patiodesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -121,7 +150,7 @@ def patio():
 
 def grave_yard():
     print graveyard
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -132,7 +161,7 @@ def grave_yard():
 
 def charred_room():
     print charredroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -149,7 +178,7 @@ def charred_room():
 
 def garden():
     print gardendesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -164,7 +193,7 @@ def garden():
 
 def game_room():
     print gameroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -179,7 +208,7 @@ def game_room():
 
 def conservatory():
     print conservatorydesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -190,7 +219,7 @@ def conservatory():
 
 def dining_room():
     print diningroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -203,7 +232,7 @@ def dining_room():
 
 def creeky_hall():
     print creekyhall
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -216,7 +245,7 @@ def creeky_hall():
 
 def ball_room():
     print ballroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -246,7 +275,7 @@ def outside():
 
 def landing():
     print landingdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -263,7 +292,7 @@ def landing():
 
 def research_lab():
     print researchlab
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -276,7 +305,7 @@ def research_lab():
 
 def vault():
     print vaultdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -287,7 +316,7 @@ def vault():
 
 def junk_room():
     print junkroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -302,7 +331,7 @@ def junk_room():
 
 def collapsed_room():
     print collapsedroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -315,7 +344,7 @@ def collapsed_room():
 
 def balcony():
     print balconydesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -326,7 +355,7 @@ def balcony():
 
 def bedroom():
     print bedroomdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -339,7 +368,7 @@ def bedroom():
 
 def attic():
     print atticdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -350,7 +379,7 @@ def attic():
 
 def bloody_room():
     print bloodyroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -365,7 +394,7 @@ def bloody_room():
 
 def library():
     print librarydesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -378,7 +407,7 @@ def library():
 
 def gallery():
     print gallerydesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -391,7 +420,7 @@ def gallery():
 
 def master_bedroom():
     print masterbedroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -402,7 +431,7 @@ def master_bedroom():
 
 def tower():
     print towerdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -415,7 +444,7 @@ def tower():
 
 def chapel():
     print chapeldesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -444,7 +473,7 @@ def basement_landing():
 
 def gym():
     print gymdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -458,7 +487,7 @@ def gym():
         
 def furnace_room():
     print furnaceroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -474,7 +503,7 @@ def furnace_room():
 
 def wine_celler():
     print wineceller
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -488,7 +517,7 @@ def wine_celler():
 
 def servants_quarters():
     print servantsquarters
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -515,7 +544,7 @@ def mystic_elevator(): # will teleport player to a random room eventually
 
 def pentagram_chamber():
     print pentagramchamber
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -526,7 +555,7 @@ def pentagram_chamber():
 
 def statuary_hall():
     print statuaryhall
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -539,7 +568,7 @@ def statuary_hall():
 
 def underground_lake():
     print undergroundlake
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -562,7 +591,7 @@ def stairs_to_foyer():
 
 def chasm():
     print chasmdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -575,7 +604,7 @@ def chasm():
 
 def organ_room():
     print organroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -588,7 +617,7 @@ def organ_room():
 
 def store_room():
     print storeroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -599,7 +628,7 @@ def store_room():
 
 def operating_room():
     print operatingroom
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -612,7 +641,7 @@ def operating_room():
 
 def larder():
     print larderdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -625,7 +654,7 @@ def larder():
 
 def catacombs():
     print catacombsdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -638,7 +667,7 @@ def catacombs():
 
 def crypt():
     print cryptdesc
-    creature()
+    monster(type)
 
     next = raw_input("> ").lower()
 
@@ -647,12 +676,10 @@ def crypt():
     else:
         dead(crypt_death)
 
-# Creatures
 
-def creature():
-    monster = [zombies,no_monster, zombie,no_monster, vampire,no_monster, count_vampire,no_monster, were_wolf,no_monster, slimes, no_monster, cultist]
-    print random.choice(monster)
+    
 
+    
 #death
 def dead(why):
     print why, "Good Job!!"
@@ -660,8 +687,6 @@ def dead(why):
 
 #actual gameplay starts here
 print logo
-
 print intro
-
 raw_input ("> ")
 outside()

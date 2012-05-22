@@ -98,7 +98,9 @@ in this room so the fire had to have been started here. What could have
 caused such a blaze and contained it so fully. There is a door on every 
 wall."""
 
-diningroom="""Where the eating happens. Back north or keep going east"""
+diningroom="""Nothing like a formal dining room. This one has a long table
+and ten chairs. There are places set for eight people and you are just
+waiting for people to come in and sit down. """
 
 gameroom="""No xbox here. west, north or east?"""
 

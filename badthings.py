@@ -1,22 +1,31 @@
 # Basement Deaths
 
-underground_lake_death = "A tentecle reachs out from the depths of the lake and grabs you. As you get dragged under your life flashes before your eyes"
+underground_lake_death = """A tentecle reachs out from the depths of the lake
+ and grabs you. As you get dragged under your life flashes before your eyes"""
 
-basement_landing_death = "As you stand there you feel something brush your leg. Glancing down you notice hundreds of rats and they look hungry"
+basement_landing_death = """As you stand there you feel something brush your 
+leg. Glancing down you notice hundreds of rats and they look hungry"""
 
-larder_death = "You slip and fall landing on a meat hook. Impaled there you slowly bleed to death"
+larder_death = """"You slip and fall landing on a meat hook. Impaled there you 
+slowly bleed to death"""
 
-catacombs_death = "You try to navigate the catacombs carefully but you slip on some weird fungus and break your neck."
+catacombs_death = """You try to navigate the catacombs carefully but 
+you slip on some weird fungus and break your neck."""
 
-crypt_death = "As you open the coffin you notice that the person inside looks familiar. Upon closer inspection you realize that if it you in the coffin. The world goes black"
+crypt_death = """As you open the coffin you notice that the person 
+inside looks familiar. Upon closer inspection you realize that if 
+it you in the coffin. The world goes black"""
 
 gym_death = "Walking across the room you have a heart attack."
 
-chasm_death = "That rickity bridge proved to be too rickity. A board snaps and you discover that the pit isn't actually bottomless"
+chasm_death = """That rickity bridge proved to be too rickity. 
+A board snaps and you discover that the pit is not actually bottomless"""
 
-organ_room_death = "Suddenly the organ starts playing music. It is an upbeat tune, which is nice since you dance yourself to death."
+organ_room_death = """"Suddenly the organ starts playing music. It is an
+ upbeat tune, which is nice since you dance yourself to death."""
 
-store_room_death = ""
+store_room_death = """For some reason you feel compelled to open one of
+ the cabinets. A metric ton of canned goods crush you."""
 
 furnace_room_death = ""
 
@@ -100,6 +109,21 @@ balcony_death = ""
 
 # Creature Deaths
 
+zombie_death = "This undead gentlemen is sneaky fast. He catches you and starts to chew on your arm. Nothing you do seems to get him off."
+
+zombies_death = "The zombies corner you and start to eat you as you scream."
+
+vampire_death = "The vampire is too fast for you. Luckiy for you he breaks your neck before starting to feed."
+
+count_vampire_death = "The count is to fast for you. As he sucks your blood you wonder if he will make you a vampire or just eat you."
+
+slimes_death = "Did you really decide to touch the slimes? Slimes are made of acid... duh. You melt into a pile of goo."
+
+cultist_death = "Should have bashed his head. You start to believe what he is saying. You realize too late that he has the knife raised to stab you."
+
+were_wolf_death = "The werewolf smells you and attacks... you lose."
+
+were_wolf_gun_death = "You don't have a gun. The werewolf eats you."
 # Creatures
 
 zombie = "BRAAIIINSSS!! A single zombie blocks your path. What do you do?"
@@ -116,4 +140,4 @@ slimes = "Ewwwwwwww!!! Is that jello? Nope it is a group of slimes. Don't let th
 
 no_monster = "This room appears to be empty"
 
-cultist = "This room has a dude in a robe. Is that a knife in his hand? What do you do?"
+cultist = "This room has a dude in a robe who is chanting some gibberish. Is that a knife in his hand? What do you do?"
