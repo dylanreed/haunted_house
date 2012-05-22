@@ -21,7 +21,7 @@ gym_death = "Walking across the room you have a heart attack."
 chasm_death = """That rickity bridge proved to be too rickity. 
 A board snaps and you discover that the pit is not actually bottomless"""
 
-organ_room_death = """"Suddenly the organ starts playing music. It is an
+organ_room_death = """Suddenly the organ starts playing music. It is an
  upbeat tune, which is nice since you dance yourself to death."""
 
 store_room_death = """For some reason you feel compelled to open one of
@@ -109,35 +109,23 @@ balcony_death = ""
 
 # Creature Deaths
 
-zombie_death = "This undead gentlemen is sneaky fast. He catches you and starts to chew on your arm. Nothing you do seems to get him off."
+zombie_death = """This undead gentlemen is sneaky fast. He catches you and starts 
+to chew on your arm. Nothing you do seems to get him off."""
 
 zombies_death = "The zombies corner you and start to eat you as you scream."
 
-vampire_death = "The vampire is too fast for you. Luckiy for you he breaks your neck before starting to feed."
+vampire_death = """The vampire is too fast for you. Luckiy for you he breaks your 
+neck before starting to feed."""
 
-count_vampire_death = "The count is to fast for you. As he sucks your blood you wonder if he will make you a vampire or just eat you."
+count_vampire_death = """The count is too fast for you. As he sucks your blood you 
+wonder if he will make you a vampire or just eat you."""
 
-slimes_death = "Did you really decide to touch the slimes? Slimes are made of acid... duh. You melt into a pile of goo."
+slimes_death = """Did you really decide to touch the slimes? Slimes are made of acid... 
+duh. You melt into a pile of goo."""
 
-cultist_death = "Should have bashed his head. You start to believe what he is saying. You realize too late that he has the knife raised to stab you."
+cultist_death = """Should have bashed his head. You start to believe what he is saying. 
+You realize too late that he has the knife raised to stab you."""
 
 were_wolf_death = "The werewolf smells you and attacks... you lose."
 
 were_wolf_gun_death = "You don't have a gun. The werewolf eats you."
-# Creatures
-
-zombie = "BRAAIIINSSS!! A single zombie blocks your path. What do you do?"
-
-zombies = "BRAAIIINNSSS!! Oh crap, it is a group of three zombies. What do you do?"
-
-vampire = "There is a man standing in your way. He turns towards you and you notice a red gleam in his eyes and that his teeth are pointy. It's a Vampire. What do you do?"
-
-count_vampire = "There is a man standing in this room. Is he wearing a cape? Oh man, it's the Count. What do you do?"
-
-were_wolf = "You here growling as you enter the room and quickly notice that you are not alone. You wouldn't say that it is a wolf... but it also isn't a man. It's a werewolf. What do you do?"
-
-slimes = "Ewwwwwwww!!! Is that jello? Nope it is a group of slimes. Don't let them touch you. What do you do?"
-
-no_monster = "This room appears to be empty"
-
-cultist = "This room has a dude in a robe who is chanting some gibberish. Is that a knife in his hand? What do you do?"

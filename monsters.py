@@ -74,7 +74,7 @@ RUN away or use BOTH your cross and stake. What do you do?"""
 		dead(count_vampire_death)
 
 def were_wolf():
-	print """You here growling as you enter the room and quickly notice 
+	print """You hear growling as you enter the room and quickly notice 
 that you are not alone. You wouldn't say that it is a wolf... but it 
 also isn't a man. It's a werewolf. You can SHOOT him with a silver 
 bullet, RUN away, try to SNEAK by or BASH him in the head. What do you do?"""
@@ -94,7 +94,7 @@ bullet, RUN away, try to SNEAK by or BASH him in the head. What do you do?"""
 
 def slimes():
 	print """Ewwwwwwww!!! Is that jello? Nope it is a group of slimes. 
-	Don't let them touch you. Do you STEP on them, SMASH them or AVOID them?"""
+Don't let them touch you. Do you STEP on them, SMASH them or AVOID them?"""
 
 	attack = raw_input("> ").lower()
 
