@@ -21,25 +21,25 @@ def generic_room():
     else:
         monsters.dead("You stumble around the room until you starve.")
 
-# Creatures
+# Creature selection
 
 def monster(type):
-    type = random.choice([zombies,no_monster, zombie,no_monster, vampire,no_monster, count_vampire,no_monster, were_wolf,no_monster, slimes, no_monster, cultist])
+    type = random.choice(["zombies", "no_monster", "zombie", "no_monster", "vampire", "no_monster", "count_vampire", "no_monster", "were_wolf", "no_monster", "slimes", "no_monster", "cultist"])
     #print random.choice(monster)
     #random.choice(type)
-    if type == zombies:
+    if type == "zombies":
         monsters.zombies()
-    elif type == zombie:
+    elif type == "zombie":
         monsters.zombie()
-    elif type == vampire:
+    elif type == "vampire":
         monsters.vampire()
-    elif type == count_vampire:
+    elif type == "count_vampire":
         monsters.count_vampire()
-    elif type == were_wolf:
+    elif type == "were_wolf":
         monsters.were_wolf()
-    elif type == slimes:
+    elif type == "slimes":
         monsters.slimes()
-    elif type == cultist:
+    elif type == "cultist":
         monsters.cultist()
     else:
         monsters.no_monster()
