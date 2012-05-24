@@ -27,15 +27,15 @@ organ_room_death = """Suddenly the organ starts playing music. It is an
 store_room_death = """For some reason you feel compelled to open one of
  the cabinets. A metric ton of canned goods crush you."""
 
-furnace_room_death = ""
+furnace_room_death = "With a sudden woosh you go up in flames."
 
-operating_room_death = ""
+operating_room_death = """Curious you take a closer look at the operating table.
+you bunp a tray and a needle plunges into your eye."""
 
-wine_celler_death = ""
+wine_celler_death = """The casks of wine shift and a one of the rolls over your foot 
+trapping you until you starve"""
 
-servants_quarters_death = ""
-
-mystic_elevator_death = ""
+servants_quarters_death = """Oh God!! It's a self smothering pillow. And it's got you."""
 
 pentagram_chamber_death = ""
 
