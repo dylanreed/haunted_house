@@ -57,8 +57,9 @@ It's a Vampire. Do you stab him with a STAKE, use your CROSS or RUN away?"""
 
 def count_vampire():
 	print """There is a man standing in this room. Is he wearing a cape? 
-Oh man, it's the Count. You can stab him with your STAKE, use your CROSS,
-RUN away or use BOTH your cross and stake. What do you do?"""
+Does he have fangs? Oh man, it's the Count. You can stab him with your 
+STAKE, use your CROSS, RUN away or use BOTH your cross and stake.
+What do you do?"""
 
 	attack = raw_input("> ").lower()
 
@@ -129,7 +130,9 @@ def dead(why):
     print why, "Play Again? (y/n)"
     again = raw_input("> ")
     if again in ['y','yes']:
-    	print"monkies"
+    	print""
+    	print""
+    	print""
         start.start()
     else:
    		exit(0)
