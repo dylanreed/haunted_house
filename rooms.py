@@ -24,15 +24,15 @@ moving in windows. Do you enter?"""
 entrancehall = """You find yourself in a surprisingly well lit entrance hall. 
 There are coat racks to hang your coat on, in fact all that 
 is missing is a butler. Further down the hall you see through
-a foyer a set of stairs. There are doors to the west and east
-of you as well as the foyer to the north. What door do you 
+a foyer a set of stairs. There are doors to the WEST and EAST
+of you as well as the foyer to the NORTH. What door do you 
 want to go through?"""
 
 creekyhall="""Through this door you find yourself in a hallway, 
 every step causing the floorboards to creek. You pause after 
 every step but don't hear anything else moving in the house. 
-At the end of the hall is a dooway. Do you go through that 
-door(w) or head back the way you came(e)?"""
+At the end of the hall is a dooway. Do you go WEST through that 
+door or head back EAST?"""
 
 ballroom="""This beautifully decorated ballroom is dusty and 
 looks unused. As you reach the center of the room you hear a 
