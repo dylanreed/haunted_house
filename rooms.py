@@ -10,7 +10,7 @@ Betrayal on the House on the Hill
 
 INSTRUCTIONS:
 For ease of playing you can abbreviate
-North, South, East and West as N, S, E and W. 
+NORTH, SOUTH, EAST and WEST as N, S, E and W. 
 Action words will be in ALL CAPS. 
 
 Good Luck!"""
@@ -37,7 +37,7 @@ door or head back EAST?"""
 ballroom="""This beautifully decorated ballroom is dusty and 
 looks unused. As you reach the center of the room you hear a 
 hidious shriek from somewhere else in the house. There is a 
-door to the south and the door you entered from(e). Which 
+door to the SOUTH and the door you entered from(e). Which 
 door do you want to go through?"""
 
 coalchute= """You enter this room and the first thing you notice 
@@ -48,7 +48,7 @@ you feel for injuries and stand up.
 
 foyerdesc="""A contiuation of the entrance hall the foyer seems just
  a little bit more musty. There are suits of armor lining the walls 
- and a large staircase to the north. On the east and west walls are 
+ and a large staircase to the NORTH. On the EAST and WEST walls are 
  closed doors. There is a large painting of a man riding a horse on 
  one wall. """
 
@@ -75,17 +75,22 @@ diningroom="""Nothing like a formal dining room. This one has a long table
 and ten chairs. There are places set for eight people and you are just
 waiting for people to come in and sit down. """
 
-gameroom="""No xbox here. west, north or east?"""
+gameroom="""Is that a billiard table? What is a billiard table? This room has
+it all. A chess board in one corner, a stuffed bear in another and is that a
+paiting on a bunch of dogs playing cards? You can exit WEST, NORTH and EAST."""
 
-conservatorydesc="""What is a conservatory? Can only go back west from here"""
+conservatorydesc="""This room seems pretty dull. Unless you like books. 
+Man, oh man, is it full of those. With just a quick glance around you find
+every book you can imagine. You can only head back WEST from here."""
 
-gardendesc="""Look at all the plants. Can go west, north or south."""
+gardendesc="""You are in a garden. Trees, plants, flowers: it is all here.
+Hopefully nothing too poisoness lurking in the bushes...You can go , NORTH or SOUTH."""
 
-abandonedroom="""Looks like no one has been here for years. North, south or west?"""
+abandonedroom="""Looks like no one has been here for years. NORTH, SOUTH or WEST?"""
 
-kitchendesc="""Where is the pie? SOuth or west?"""
+kitchendesc="""Where is the pie? SOuth or WEST?"""
 
-patiodesc="""Time to relax. East or South?"""
+patiodesc="""Time to relax. EAST or SOUTH?"""
 
 dustyhall="""AHHHH CHOOOO!!!!! So much dust. All directions availible."""
 
@@ -136,7 +141,7 @@ chasmdesc="""A deep hole in the ground be careful N +S"""
 
 organroom="""play that organ. S and w"""
 
-storeroom="""Store stuff here. East only"""
+storeroom="""Store stuff here. EAST only"""
 
 furnaceroom="""It sure is hot in here. N, E, W"""
 
