@@ -86,7 +86,10 @@ every book you can imagine. You can only head back WEST from here."""
 gardendesc="""You are in a garden. Trees, plants, flowers: it is all here.
 Hopefully nothing too poisoness lurking in the bushes...You can go , NORTH or SOUTH."""
 
-abandonedroom="""Looks like no one has been here for years. NORTH, SOUTH or WEST?"""
+abandonedroom="""The only way to discribe this room is abandoned. There is a thick
+layer of dust on the floor, the furniture looks rotted and you swear that the air 
+itself is thick with dust.There are dusty doors to the NORTH, SOUTH and WEST. Which
+way do you go?"""
 
 kitchendesc="""Where is the pie? SOuth or WEST?"""
 
