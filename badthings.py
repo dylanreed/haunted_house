@@ -128,18 +128,18 @@ were_wolf_gun_death = "You don't have a gun. The werewolf eats you."
 
 # Creatures
 
-zombie = "BRAAIIINSSS!! A single zombie blocks your path. What do you do?"
+zombie_desc = "BRAAIIINSSS!! A single zombie blocks your path. Do you want to sneak, run, or bash?"
 
-zombies = "BRAAIIINNSSS!! Oh crap, it is a group of three zombies. What do you do?"
+zombies_desc = "BRAAIIINNSSS!! Oh crap, it is a group of three zombies. Do you want to sneak, run, or bash?"
 
-vampire = "There is a man standing in your way. He turns towards you and you notice a red gleam in his eyes and that his teeth are pointy. It's a Vampire. What do you do?"
+vampire_desc = "There is a man standing in your way. He turns towards you and you notice a red gleam in his eyes and that his teeth are pointy. It's a Vampire. Do you use the stake, the cross, or do you run?"
 
-count_vampire = "There is a man standing in this room. Is he wearing a cape? Oh man, it's the Count. What do you do?"
+count_vampire_desc = "There is a man standing in this room. Is he wearing a cape? Oh man, it's the Count. Do you use the stake, the cross, both, or do you run?"
 
-were_wolf = "You here growling as you enter the room and quickly notice that you are not alone. You wouldn't say that it is a wolf... but it also isn't a man. It's a werewolf. What do you do?"
+were_wolf_desc = "You here growling as you enter the room and quickly notice that you are not alone. You wouldn't say that it is a wolf... but it also isn't a man. It's a werewolf. Do you shoot him, bash him, sneak, or run?"
 
-slimes = "Ewwwwwwww!!! Is that jello? Nope it is a group of slimes. Don't let them touch you. What do you do?"
+slimes_desc = "Ewwwwwwww!!! Is that jello? Nope it is a group of slimes. Don't let them touch you. Do you step on them, smash them, or avoid them?"
 
-no_monster = "This room appears to be empty"
+no_monster_desc = "This room appears to be empty"
 
-cultist = "This room has a dude in a robe who is chanting some gibberish. Is that a knife in his hand? What do you do?"
+cultist_desc = "This room has a dude in a robe who is chanting some gibberish. Is that a knife in his hand? Do you sneak, listen or bash?"

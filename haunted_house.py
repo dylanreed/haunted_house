@@ -3,6 +3,7 @@ from sys import exit
 from rooms import *
 from badthings import *
 from goodthings import *
+from monsters import *
 import monsters
 
 def generic_room():
@@ -51,7 +52,6 @@ def entrance_hall():
     print entrancehall
     monster(type)
 
-    
     
 
     next = raw_input("> ").lower()
@@ -688,6 +688,5 @@ def dead(why):
 #actual gameplay starts here
 print logo
 print intro
-print slimes
 raw_input ("> ")
 outside()
