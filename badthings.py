@@ -124,6 +124,7 @@ cultist_death = "Should have bashed his head. You start to believe what he is sa
 were_wolf_death = "The werewolf smells you and attacks... you lose."
 
 were_wolf_gun_death = "You don't have a gun. The werewolf eats you."
+
 # Creatures
 
 zombie = "BRAAIIINSSS!! A single zombie blocks your path. What do you do?"
