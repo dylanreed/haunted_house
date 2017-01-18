@@ -102,7 +102,7 @@ diningroom="""Nothing like a formal dining room. This one has a long table
 and ten chairs. There are places set for eight people and you are just
 waiting for people to come in and sit down. """
 
-gameroom="""No xbox here. west, north or east?"""
+gameroom="""Looking around you see nothing but a pool table. This must be the game room. """
 
 conservatorydesc="""What is a conservatory? Can only go back west from here"""
 
