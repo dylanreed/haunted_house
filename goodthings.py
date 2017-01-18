@@ -5,7 +5,7 @@ zombie_success = "You bash the zombies skull in. Nice work."
 
 vampire_success = "The vampire flees from your cross."
 
-werewolf_success = "Bashing him on the head worked surprisingly well. You knock him out. Quick go to another room."
+were_wolf_success = "Bashing him on the head worked surprisingly well. You knock him out. Quick go to another room."
 
 cultist_success = "Nice work. You knocked this dude out. And not a momment too soon, being in his cult was starting ot sound pretty cool. "
 

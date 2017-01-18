@@ -688,5 +688,6 @@ def dead(why):
 #actual gameplay starts here
 print logo
 print intro
+print slimes
 raw_input ("> ")
 outside()

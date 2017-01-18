@@ -6,7 +6,7 @@ def no_monster():
     print "This room appears to be empty."
 
 def zombies():
-	print"zombies"
+	print zombies 
 
 	attack = raw_input("> ").lower()
 
@@ -20,7 +20,7 @@ def zombies():
 		dead(zombies_death)
 
 def zombie():
-	print"zombie"
+	print zombie 
 
 	attack = raw_input("> ").lower()
 
@@ -34,7 +34,7 @@ def zombie():
 		dead(zombie_death)
 
 def vampire():
-	print"vampire"
+	print vampire 
 
 	attack = raw_input("> ").lower()
 
@@ -48,7 +48,7 @@ def vampire():
 		dead(vampire_death)
 
 def count_vampire():
-	print"count_vampire"
+	print count_vampire 
 
 	attack = raw_input("> ").lower()
 
@@ -64,7 +64,7 @@ def count_vampire():
 		dead(count_vampire_death)
 
 def were_wolf():
-	print"werewolf"
+	print were_wolf 
 
 	attack = raw_input("> ").lower()
 
@@ -80,7 +80,7 @@ def were_wolf():
 		dead(were_wolf_death)
 
 def slimes():
-	print"slimes"
+	print slimes
 
 	attack = raw_input("> ").lower()
 
@@ -94,7 +94,7 @@ def slimes():
 		dead(slimes_death)
 
 def cultist():
-	print"cultist"
+	print cultist 
 
 	attack = raw_input("> ").lower()
 

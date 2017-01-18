@@ -27,7 +27,8 @@ organ_room_death = """"Suddenly the organ starts playing music. It is an
 store_room_death = """For some reason you feel compelled to open one of
  the cabinets. A metric ton of canned goods crush you."""
 
-furnace_room_death = ""
+furnace_room_death = """The furnace door burst open filling the room
+ with fire and ash. As you choke on the smoke you wonder what will happen to your corpse as you burn."""
 
 operating_room_death = ""
 
